@@ -1,0 +1,49 @@
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.image-container {
+  display: inline-block;
+}
+
+.plus-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  background: black;
+  text-align: center;
+}
+
+.plus-icon {
+  font-size: 30px;
+  color: white;
+}
+
+.top-right {
+  top: 4%;
+  right: 2%;
+}
+
+.top-left {
+  top: 10%;
+  left: 5%;
+}
+
+.middle-left {
+  top: 35%;
+  left: 38%;
+}
+
+.middle-right {
+  top: 35%;
+  right: 10%;
+}
