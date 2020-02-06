@@ -11,16 +11,29 @@
   display: inline-block;
 }
 
+.image-container .image-featured {
+  margin-top: 0;
+}
+
+.float-none {
+  float: none;
+}
+
 .plus-icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20px;
-  width: 20px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 50%;
   background: black;
   text-align: center;
+  transition: transform .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform: rotate(0);
+}
+
+.plus-icon-container:hover {
+  transition: transform .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform: rotate(45deg);
 }
 
 .plus-icon {
@@ -34,7 +47,7 @@
 }
 
 .top-left {
-  top: 10%;
+  top: 8%;
   left: 5%;
 }
 
@@ -46,4 +59,462 @@
 .middle-right {
   top: 35%;
   right: 10%;
+}
+
+@media (max-height: 500px) {
+  
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+  
+}
+
+/* Main CSS from https://publishers.spotify.com/static/css/main.css?v=10 */
+
+.svg-symbols {
+  display: none;
+}
+
+.alert {
+  margin-bottom: 0;
+  padding: 15px 45px 15px 15px;
+  position: relative;
+  font-size: 13px;
+}
+
+.alert button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 15px;
+}
+
+.alert button svg {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+  position: relative;
+  top: 13px;
+  right: -30px;
+}
+
+
+.navbar .navbar-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar .navbar-brand {
+  color: white;
+}
+
+.navbar .navbar-brand .navbar-title {
+  position: relative;
+  left: -4px;
+  font-weight: lighter;
+  letter-spacing: -1px;
+}
+
+.navbar .navbar-brand + .navbar-link {
+  margin-left: auto;
+}
+
+.navbar .navbar-link {
+  padding: 28px 17px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  font-size: 16px;
+}
+
+.navbar .navbar-link::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 32px;
+  left: 50%;
+  bottom: 22px;
+  transform: translate(-50%, 0px);
+  background: transparent;
+  transition: background 0.3s ease 0s;
+}
+
+.navbar .navbar-link:hover::after,
+.navbar .navbar-link:focus::after {
+  background: #fff;
+}
+
+.hero.hero-small {
+  padding: 120px 0 80px;
+}
+
+.hero h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.faq .hero,
+.guide .hero {
+  color: white;
+  margin-top: -80px;
+  padding: 150px 0 130px;
+  background: #4B917D;
+}
+
+.home .hero {
+  color: white;
+  margin-top: -80px;
+  padding: 0 0 60px;
+  background-color: rgb(66, 134, 114);
+  background-image: url("/static/images/burst-1.svg"), url("/static/images/burst-2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom right;
+}
+
+.home .hero h1 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 320px 0 132px;
+  margin-bottom: 60px;
+}
+
+.faq .container-nav {
+  margin-top: 20px;
+}
+
+.faq .nav-tabs {
+  border: none;
+}
+
+.faq .nav-tabs li {
+  margin: 0 40px 0 0;
+}
+
+.faq .entries {
+  padding: 40px 0 20px;
+}
+
+.faq .entries .entry {
+  position: relative;
+  margin: 0 0 20px;
+  border: 1px solid #efefef;
+  padding: 10px 40px;
+  word-wrap: break-word;
+}
+
+.faq .entries .entry h3 {
+  cursor: pointer;
+  margin: 20px 0;
+  padding: 0 40px 0 0;
+}
+
+.faq .entries .entry svg {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  transition: transform 0.5s;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.faq .entries .entry.expanded svg {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.faq .entries .entry .answer {
+  display: none;
+  overflow: hidden;
+}
+
+.faq .entries .entry.expanded .answer {
+  display: block;
+}
+
+.publishing-settlement {
+  padding: 40px 0;
+  font-weight: 200;
+  max-width: 800px;
+  word-wrap: break-word;
+}
+
+.publishing-settlement ul li {
+  margin: 0 0 10px 0;
+}
+
+.intro-modules {
+  margin-bottom: 80px;
+}
+
+.intro-modules img {
+  padding-bottom: 20px;
+}
+
+.cta-small {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 16px;
+}
+
+.btn-group-inverse .btn {
+  border-radius: 0;
+  letter-spacing: 0;
+  font-weight: 400;
+  background: white;
+  line-height: 1.5;
+}
+
+:not(.open).btn-group-inverse .btn {
+  border-bottom: 1px solid #262626;
+  margin-bottom: -1px;
+}
+
+.btn-group-inverse .btn-submenu ~ .dropdown-menu {
+  border-radius: 0;
+  border-bottom: 1px solid #262626;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+}
+
+.btn-group-inverse .btn-submenu ~ .dropdown-menu li,
+.btn-group-inverse .btn-submenu ~ .dropdown-menu li:first-child {
+  border: 0;
+}
+
+.btn-group-inverse .btn-submenu ~ .dropdown-menu li > a {
+  color: #737373;
+}
+
+.guide .lead {
+  margin-bottom: 90px;
+}
+
+.guide p {
+  margin: 0 0 1.4em;
+}
+
+.guide h1, .faq h1 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.guide h3 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.guide img {
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+
+.guide .guide-section-body {
+  padding-bottom: 80px;
+}
+
+.guide .guide-section-body figure, .guide .guide-section-body  iframe {
+  margin-top: 35px;
+  margin-bottom: 60px;
+}
+
+.guide .guide-section-body figcaption {
+  margin-top: 7px;
+}
+
+/* CHECK THE > > > ON ul li */
+.guide .col-sidebar .nav > li {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .11em;
+  font-weight: 700;
+}
+
+.guide .col-sidebar .nav > li:hover > a,
+.guide .col-sidebar .nav > li:focus > a,
+.guide .col-sidebar .nav > li:active > a,
+.guide .col-sidebar .nav > li.active > a {
+   color: black;
+ }
+
+.guide .col-sidebar .nav > li > ul > li {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .08em;
+  display: list-item;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.guide .col-sidebar .nav > li > ul > li > a {
+  padding-left: 5px;
+}
+
+.guide .col-sidebar .nav > li > ul > li > a:before {
+   content: 'â€¢';
+   display: inline-block;
+   margin-right: 8px;
+ }
+
+.guide .subnav-sm {
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  margin-bottom: -47px;
+}
+
+.guide .col-sidebar .affix-bottom {
+    position: absolute;
+  }
+
+.guide .col-sidebar .affix {
+  top: 42px;
+  position: fixed;
+}
+
+.guide .col-sidebar,
+.guide .col-sidebar-bottom {
+  width: 293.33px;
+}
+
+@media (min-width: 768px) {
+
+  .guide.guide-section-body figcaption {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .guide.col-sidebar {
+    width: 360px;
+  }
+}
+
+@media (max-height: 500px) {
+  .guide.col-sidebar {
+    position: static !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .guide .hero {
+    margin-bottom: 115px;
+  }
+
+  .guide h1, .faq h1 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .navbar .navbar-brand .navbar-title {
+    left: 0px;
+  }
+
+  .hero {
+    padding: 90px 0 45px;
+    margin-top: -55px;
+  }
+
+  .hero.hero-small {
+    padding: 80px 0 40px;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+  }
+
+  .home .hero {
+    background-image: url("/static/images/burst-1.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .guide .container-main {
+    padding-top: 55px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .faq .nav-tabs li {
+    float: none;
+  }
+
+  .faq .nav-tabs li:hover a {
+    padding: 10px 0 8px;
+  }
+
+  .faq .nav-tabs li.active:hover a {
+    padding: 10px 0;
+  }
+
+  .faq .entries {
+    padding: 20px 0 0;
+  }
+
+  .faq .entries .entry {
+    padding: 10px 20px;
+  }
+
+  .faq .entries .entry h3 {
+    font-size: 18px;
+  }
+
+  .faq .entries .entry svg {
+    top: 30px;
+    right: 20px;
+  }
+
+  .publishing-settlement {
+    padding: 0 0 12px 0;;
+  }
+
+  .home .hero .text-right {
+    text-align: center;
+  }
+
+  .guide .cta-small {
+    background: white;
+    border-bottom: 1px solid #262626;
+    border-top: 1px solid #262626;
+    margin-top: -1px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 12px 15px 8px;
+  }
+
+  .guide .sticky {
+    position: sticky;
+    top: 47px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .guide .sticky.btn-group-inverse {
+    top: 0;
+    z-index: 2;
+    display: block;
+  }
+
 }
