@@ -1,4 +1,5 @@
 
+/* Utility Classes */
 .relative {
   position: relative;
 }
@@ -19,11 +20,13 @@
   float: none;
 }
 
+/* Custom CSS */
+
 .plus-icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
   background: black;
   text-align: center;
@@ -36,37 +39,138 @@
   transform: rotate(45deg);
 }
 
+.cta-container {
+  margin-bottom: 80px;
+}
+
 .plus-icon {
   font-size: 30px;
   color: white;
 }
 
-.top-right {
-  top: 4%;
-  right: 2%;
+/* Tooltip Locations */
+
+.tooltip-playlist {
+  top: 34%;
+  right: 14%;
 }
 
-.top-left {
-  top: 8%;
-  left: 5%;
+.tooltip-publisher {
+  top: 42%;
+  right: 23%;
 }
 
-.middle-left {
-  top: 35%;
-  left: 38%;
+.tooltip-collaborators {
+  top: 40%;
+  left: 27%;
 }
 
-.middle-right {
-  top: 35%;
-  right: 10%;
+.tooltip-songs {
+  top: 25%;
+  right: 15%;
 }
 
-@media (max-height: 500px) {
+/* Animations */
+
+.stagger-fade-in div {
+  animation: fade-in 1.5s backwards;
+}
+
+.stagger-fade-in div:nth-child(2) { 
+  animation-delay: 1s;
+}
+.stagger-fade-in div:nth-child(2) div { 
+  animation-delay: unset;
+}
+.stagger-fade-in div:nth-child(3) { 
+  animation-delay: 1.5s;
+}
+.stagger-fade-in div:nth-child(3) div { 
+  animation-delay: unset;
+}
+.stagger-fade-in div:nth-child(4) { 
+  animation-delay: 2s;
+}
+.stagger-fade-in div:nth-child(4) div { 
+  animation-delay: unset;
+}
+.stagger-fade-in div:nth-child(5) { 
+  animation-delay: 2.5s; 
+}
+.stagger-fade-in div:nth-child(5) div { 
+  animation-delay: unset;
+}
+
+.fade-in {
+  animation: fade-in 2s;
+}
+
+/* Responsive Media Queries */
+
+@media (min-width: 400px) {
+  .tooltip-playlist {
+    top: 38%;
+    right: 21%;
+  }
   
+  .tooltip-publisher {
+    top: 44%;
+    right: 36%;
+  }
+  
+  .tooltip-collaborators {
+    left: 35%;
+    left: 35%;
+  }
+  
+  .tooltip-songs {
+    top: 29%;
+    right: 20%;
+  }
 }
 
-@media (max-width: 768px) {
-
+@media (min-width: 768px) {
+  .image-container {
+    display: inline-block;
+  }
+  
+  .image-container .image-featured {
+    margin-top: 0;
+  }
+  
+  .plus-icon-container {
+    padding: 10px;
+  }
+  
+  .plus-icon-container:hover {
+    transition: transform .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform: rotate(45deg);
+  }
+  
+  .plus-icon {
+    font-size: 30px;
+    color: white;
+  }
+  
+  .tooltip-playlist {
+    top: 38%;
+    right: 21%;
+  }
+  
+  .tooltip-publisher {
+    top: 44%;
+    right: 36%;
+  }
+  
+  .tooltip-collaborators {
+    left: 35%;
+    left: 35%;
+  }
+  
+  .tooltip-songs {
+    top: 29%;
+    right: 20%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -517,4 +621,20 @@
     display: block;
   }
 
+}
+
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+      animation-timing-function: cubic-bezier(0.3,0,0,1)
+  }
+
+  76.92% {
+      opacity: 1;
+      animation-timing-function: linear
+  }
+
+  100% {
+      opacity: 1
+  }
 }
