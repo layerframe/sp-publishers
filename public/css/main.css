@@ -8,19 +8,23 @@
   position: absolute;
 }
 
-.image-container {
-  display: inline-block;
-}
-
-.image-container .image-featured {
-  margin-top: 0;
-}
 
 .float-none {
   float: none;
 }
 
 /* Custom CSS */
+.content-container {
+  margin-top: 40px;
+}
+
+.image-container .image-featured {
+  margin-top: 0;
+}
+
+.image-container {
+  display: inline-block;
+}
 
 .plus-icon-container {
   display: flex;
@@ -130,6 +134,10 @@
 }
 
 @media (min-width: 768px) {
+  .content-container {
+    margin-top: 0px;
+  }
+
   .image-container {
     display: inline-block;
   }
