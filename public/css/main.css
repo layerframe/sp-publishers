@@ -60,18 +60,18 @@
 }
 
 .tooltip-publisher {
-  top: 42%;
-  right: 23%;
+  top: 43%;
+  right: 10%;
 }
 
-.tooltip-collaborators {
+.tooltip-songs {
   top: 40%;
   left: 27%;
 }
 
-.tooltip-songs {
-  top: 25%;
-  right: 15%;
+.tooltip-collaborators {
+  top: 26%;
+  right: 16%;
 }
 
 /* Animations */
@@ -81,25 +81,25 @@
 }
 
 .stagger-fade-in div:nth-child(2) { 
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 .stagger-fade-in div:nth-child(2) div { 
   animation-delay: unset;
 }
 .stagger-fade-in div:nth-child(3) { 
-  animation-delay: 1.5s;
+  animation-delay: 2s;
 }
 .stagger-fade-in div:nth-child(3) div { 
   animation-delay: unset;
 }
 .stagger-fade-in div:nth-child(4) { 
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 .stagger-fade-in div:nth-child(4) div { 
   animation-delay: unset;
 }
 .stagger-fade-in div:nth-child(5) { 
-  animation-delay: 2.5s; 
+  animation-delay: 3s; 
 }
 .stagger-fade-in div:nth-child(5) div { 
   animation-delay: unset;
@@ -113,23 +113,23 @@
 
 @media (min-width: 400px) {
   .tooltip-playlist {
-    top: 38%;
-    right: 21%;
+    top: 36%;
+    right: 15%;
   }
   
   .tooltip-publisher {
-    top: 44%;
-    right: 36%;
-  }
-  
-  .tooltip-collaborators {
-    left: 35%;
-    left: 35%;
+    top: 41%;
+    right: 8%;
   }
   
   .tooltip-songs {
-    top: 29%;
-    right: 20%;
+    top: 45%;
+    left: 35%;
+  }
+  
+  .tooltip-collaborators {
+    top: 26%;
+    right: 16%;
   }
 }
 
@@ -161,21 +161,21 @@
   }
   
   .tooltip-playlist {
-    top: 38%;
-    right: 21%;
+    top: 36%;
+    right: 19%;
   }
   
   .tooltip-publisher {
-    top: 44%;
-    right: 36%;
-  }
-  
-  .tooltip-collaborators {
-    left: 35%;
-    left: 35%;
+    top: 41%;
+    right: 8%;
   }
   
   .tooltip-songs {
+    top: 35%;
+    left: 35%;
+  }
+  
+  .tooltip-collaborators {
     top: 29%;
     right: 20%;
   }
