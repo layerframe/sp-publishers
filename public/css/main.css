@@ -111,6 +111,22 @@
   animation: fade-in 2s;
 }
 
+@keyframes fade-in {
+  0% {
+      opacity: 0;
+      animation-timing-function: cubic-bezier(0.3,0,0,1)
+  }
+
+  76.92% {
+      opacity: 1;
+      animation-timing-function: linear
+  }
+
+  100% {
+      opacity: 1
+  }
+}
+
 /* Responsive Media Queries */
 
 @media (min-width: 400px) {
@@ -149,7 +165,7 @@
   }
   
   .plus-icon-container {
-    padding: 7px;
+    padding: 6px;
   }
   
   .plus-icon-container:hover {
@@ -164,7 +180,7 @@
   
   .tooltip-playlist {
     top: 46%;
-    right: 19%;
+    right: 20%;
   }
   
   .tooltip-publisher {
@@ -191,7 +207,10 @@
   
 }
 
+
+
 /* Main CSS from https://publishers.spotify.com/static/css/main.css?v=10 */
+/* Please REMOVE! */
 
 .svg-symbols {
   display: none;
@@ -631,20 +650,4 @@
     display: block;
   }
 
-}
-
-@keyframes fade-in {
-  0% {
-      opacity: 0;
-      animation-timing-function: cubic-bezier(0.3,0,0,1)
-  }
-
-  76.92% {
-      opacity: 1;
-      animation-timing-function: linear
-  }
-
-  100% {
-      opacity: 1
-  }
 }
